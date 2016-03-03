@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway:400,700");
+.growBox {
+  background-color: mistyrose;
+  height: 300px;
+  width: 300px;
+  transition: all 500ms ease-in-out;
+  display: inline-block;
+  float: left; }
+  @media all and (min-width: 1200px) {
+    .growBox {
+      width: 1000px; } }
+
+.person-card {
+  font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  position: relative;
+  height: 300px;
+  width: 320px;
+  overflow: hidden;
+  border: 1px solid #2780E3; }
+  .person-card .person-img {
+    width: 100%;
+    height: auto; }
+  .person-card .person-info {
+    position: absolute;
+    top: 236px;
+    height: 300px;
+    width: 100%;
+    color: #fff;
+    background: url("img/blood.png"), rgba(122, 25, 25, 0.6);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    opacity: 0.9;
+    -ms-transition: -ms-transform 0.75s;
+    -webkit-transition: -webkit-transform 0.75s;
+    transition: transform 0.75s; }
+    .person-card .person-info:hover {
+      -ms-transform: translateY(-236px);
+      -webkit-transform: translateY(-236px);
+      transform: translateY(-236px); }
+    .person-card .person-info .details-title {
+      height: 44px;
+      font-size: 20px;
+      padding: 10px; }
+      .person-card .person-info .details-title small {
+        font-size: 70%;
+        color: #f7f7f7; }
+    .person-card .person-info .details-body {
+      padding: 10px;
+      text-align: center; }
+
+.fadeImg {
+  margin: 0 auto; }
+  .fadeImg img {
+    position: absolute;
+    transition: opacity 1s ease-in-out; }
+    .fadeImg img.tree:hover {
+      opacity: 0; }
+
+.firebug {
+  position: relative;
+  top: 400px;
+  left: 25%;
+  height: 600px; }
+
+.match {
+  left: 30%;
+  position: absolute;
+  width: 100px;
+  height: 100px; }
+  .match img.match1 {
+    max-width: 100%;
+    transform: rotate(-90deg);
+    z-index: 1;
+    transition: transform .4s linear; }
+    .match img.match1:active {
+      transform: none; }
+      .match img.match1:active + img.fire {
+        opacity: 1; }
+  .match img.fire {
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    width: 150px;
+    height: 130px;
+    opacity: 0;
+    transition: all .4s linear .4s; }
+
+.main-container {
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  height: 500px;
+  border: 2pt solid red; }
+
+.container {
+  width: 200px;
+  height: 260px;
+  position: relative;
+  perspective: 800px;
+  flex: 1; }
+
+.container2 {
+  width: 200px;
+  height: 260px;
+  position: relative;
+  perspective: 800px;
+  flex: 1; }
+
+#card:active, #card2:active {
+  transform: rotateY(180deg);
+  transform: translateX(-100%) rotateY(-180deg); }
+
+#card {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  transform-style: preserve-3d;
+  transform-origin: right center;
+  transition: transform 1s; }
+
+#card figure {
+  margin: 0;
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden; }
+
+#card .back {
+  transform: rotateY(180deg); }
+
+#card2 {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transform-style: preserve-3d;
+  transform-origin: right center;
+  transition: transform 1s; }
+
+#card2 figure {
+  margin: 0;
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden; }
+
+#card2 .back2 {
+  transform: rotateY(180deg); }
+
+/*# sourceMappingURL=styles.css.map */
